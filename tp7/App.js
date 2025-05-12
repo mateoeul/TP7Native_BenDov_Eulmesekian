@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, SafeAreaView} from 'react-native';
 import { useState, useEffect } from 'react';
+import InputText from './components/inputText';
 
 import * as SplashScreen from 'expo-splash-screen';
 
@@ -30,10 +31,11 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
-      <Text>hpña angie</Text>
-    </View>
+      <InputText placeholder="Email"> </InputText>
+      <InputText placeholder="Contraseña"> </InputText>
+    </SafeAreaView>
   );
 }
 
@@ -44,4 +46,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  
 });
