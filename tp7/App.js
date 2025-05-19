@@ -35,7 +35,7 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       
       <View style={{marginBottom: 25}}>  
-        <Text style={{color: 'white', fontSize: 15, marginTop: 8}}>Login App</Text>
+        <Text style={{color: 'white', fontSize: 15, marginTop: 8}}>Login App - Ben Dov, Eulmesekian y Marasch</Text>
       </View>
 
       <View style={styles.componentsContainer}>
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     width:'100%', 
     alignItems: 'center', 
     justifyContent: 'center', 
-    height:'100%'
+    height:'100%',
   },
   
 });
